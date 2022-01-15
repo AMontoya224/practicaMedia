@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding:0;
+}
+
+/*DISEÑO PARA CELULARES*/
+/*Header*/
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > img{
+  width: 18vw;
+}
+
+/*Navegation*/
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 1vw;
+}
+
+.menu{
+  display: none;
+}
+
+/*Main*/
+.product{
+  text-align: center;
+  margin: 7vw 5vw;
+}
+
+/*footer*/
+.social{
+  display: flex;
+  justify-content: center;
+  margin-right: 12vw;
+}
+
+.social > li{
+  margin: 0 5vw;
+  list-style: none;
+}
+
+/*DISEÑO PARA TABLETAS*/
+@media only screen and (min-width: 560px){
+  /*Header*/
+  header{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo > img{
+    width: 8vw;
+    margin-right: 20vw;
+  }
+
+  /*Main*/
+  .product{
+    margin: 7vw 10vw;
+  }
+
+  .product > h2{
+    font-size: 5vw;
+  }
+
+  .product > p{
+    font-size: 3vw;
+  }
+
+  /*footer*/
+  .social{
+    display: flex;
+    justify-content:space-around;
+  }
+}
+
+/*DISEÑO PARA COMPUTADORAS*/
+@media only screen and (min-width:980px) {
+  /*Navegation*/
+  .hamburger{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+    list-style: none;
+  }
+
+  .menu > li{
+    margin-right: 5vw;
+  }
+
+  /*Main*/
+  main{
+    display: flex;
+  }
+  
+  .product{
+    margin: 7vw 2vw;
+    flex: 1;
+  }
+
+  .product > h2{
+    font-size: 3vw;
+  }
+
+  .product > p{
+    font-size: 2vw;
+  }
+}
